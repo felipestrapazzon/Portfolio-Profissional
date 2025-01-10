@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
+    <title>Portifólio Profissional</title>
+</head>
+
+<body>
+    <div class="fadeIn">
+        <nav>
+            <a class="navbar-toggler" onclick="toggleMenu()">
+                <img class="svg-icon-options" src="img/svgs/icon-options.svg" alt="Menu">
+            </a>
+            <div class="ancors">
+                <a href="#start" class="menu-item active" id="home">HOME</a>
+                <a href="#services" class="menu-item" id="servicos">SERVIÇOS</a>
+                <a href="#about" class="menu-item" id="sobre">SOBRE</a>
+                <a href="#project" class="menu-item" id="projetos">PROJETOS</a>
+                <a href="#contato" class="menu-item" id="contatos">CONTATO</a>
+            </div>
+            <div class="languages">
+                <a onclick="changeLanguage('BR')" id="br" class="lang-item active">BR</a>
+                <a onclick="changeLanguage('EN')" id="en" class="lang-item">EN</a>
+                <a onclick="changeLanguage('ESP')" id="esp" class="lang-item">ESP</a>
+            </div>
+        </nav>
+
+        <section class="start" id="start">
+            <div class="container-home">
+                <div class="left-texts-home">
+                    <p><b>-OLÁ</b></p>
+                    <h1>Eu sou <span class="bold-color">Felipe</span> Strapazzon</h1>
+                    <p>Este é o pequeno Felipe, ele é um programador e designer em profissionalização</p>
+                    <p>Aqui você pode explorar seus projetos e obter mais informações de contato.</p>
+                    <a href="#services" class="btn">Saiba Mais</a>
+
+                    <div class="redes-sociais">
+                        <div class="social-icon">
+                            <a href="https://www.facebook.com/profile.php?id=100006806266257"><img
+                                    src="img/svgs/facebook.svg" class="solid-icon" alt="Facebook"></a>
+                            <a href="https://www.facebook.com/profile.php?id=100006806266257"><img
+                                    src="img/svgs/facebook-colored.svg" class="colored-icon" alt="Facebook"></a>
+                        </div>
+                        <div class="social-icon">
+                            <a href="https://www.instagram.com/felipe.strapazzonn/"><img src="img/svgs/instagram.svg"
+                                    class="solid-icon"></img></a>
+                            <a href="https://www.instagram.com/felipe.strapazzonn/"><img
+                                    src="img/svgs/instagram-colored.svg" class="colored-icon"></img></a>
+                        </div>
+                        <div class="social-icon">
+                            <a href="https://wa.me/5549999708196"><img src="img/svgs/whatsapp.svg"
+                                    class="solid-icon"></img></a>
+                            <a href="https://wa.me/5549999708196"><img src="img/svgs/whatsapp-colored.svg"
+                                    class="colored-icon"></img></a>
+                        </div>
+                        <div class="social-icon">
+                            <a href="https://github.com/felipestrapazzon"><img src="img/svgs/github.svg"
+                                    class="solid-icon"></img></a>
+                            <a href="https://github.com/felipestrapazzon"><img src="img/svgs/github-colored.svg"
+                                    class="colored-icon"></img></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-imgs-home">
+                    <img src="img/img-eu.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="section-services" id="services">
+            <h1>Serviços que <span class="bold-color">ofereço</span></h1>
+            <p>Especializo-me em edição de vídeos com Adobe Premiere, design gráfico com Photoshop e desenvolvimento de
+                software com Visual Studio Code, transformando suas ideias em resultados impactantes.</p>
+
+            <div class="container-services">
+                <div class="section">
+                    <img src="img/img-premiere.jpg" alt="Edição de Vídeo">
+                    <div class="overlay"></div>
+                    <a class="button-services" onclick="location.href='link-para-edicao-video.html'">SAIBA
+                        MAIS</a>
+                    <p class="edit-video">Edição de vídeo</p>
+                </div>
+
+                <div class="section">
+                    <img src="img/img-photoshop.jpg" alt="Edição de Imagens">
+                    <div class="overlay"></div>
+                    <a class="button-services"
+                        onclick="location.href='https://br.pinterest.com/felipestrapa/_created/'">SAIBA
+                        MAIS</a>
+                    <p class="edit-img">Edição de imagens</p>
+                </div>
+
+                <div class="section">
+                    <img src="img/img-vscode.jpg" alt="Programação">
+                    <div class="overlay"></div>
+                    <a class="button-services" onclick="location.href='https://github.com/felipestrapazzon/'">SAIBA
+                        MAIS</a>
+                    <p class="programing">Programação</p>
+                </div>
+
+                <!-- <div class="section">
+                    <div class="img-back">
+                        <a href="#" class="link_saiba">Saiba Mais</a>
+                    </div>
+                    <div class="overlay"></div>
+                    <p class="programing">Programação</p>
+                </div> -->
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="container-about">
+                <div class="about-left">
+                    <img class="profile-img" src="img/img-eu2.png" alt="Foto de Felipe Strapazzon">
+                </div>
+                <div class="about-right">
+                    <h1>Mais <span class="bold-color">Sobre</span> Mim</h1>
+                    <p>Olá! Meu nome é <b class="bold-color">Felipe Strapazzon</b>, tenho 17 anos e sou estudante do
+                        Instituto Federal Catarinense (IFC), onde estou me formando no curso técnico integrado em
+                        Informática. Com uma paixão por tecnologia e design, estou me especializando em programação e
+                        design
+                        gráfico. Caso queira entrar em contato, meu e-mail é <b
+                            class="bold-color">lipestrapa@gmail.com</b>.
+                        Adoro transformar ideias em realidade e estou sempre aberto a novos desafios e oportunidades!
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="project" class="projects">
+            <div class="projects_content">
+                <h1>Meus <b class="bold-color">Projetos</b></h1>
+                <div class="cards-container">
+                    <div class="card">
+                        <div class="card card-background">
+                            <div class="content">
+                                <h3 class="title-project">PokeSite</h3>
+                                <img src="img/POKESITE.png" alt="projeto1">
+                                <a href="https://felipestrapazzon.github.io/PokeSite/index.html" target="_blank"
+                                    class="">Mais informações</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card card-background">
+                        <div class="content">
+                            <h3>404 Error</h3>
+                            <img src="img/404ERROR.png" alt="project2">
+                            <a href="https://felipestrapazzon.github.io/WorkWebAndFundaments/index.html" target="_blank"
+                                class="">Mais informações</a>
+                        </div>
+                    </div>
+                    <div class="card card-background">
+                        <div class="content">
+                            <h3>Site Minecraft - Somente com Banco</h3>
+                            <img src="img/MINECRAFT.PNG" alt="project3">
+                            <a class="mine" href="https://github.com/felipestrapazzon/MinecraftQuizz"
+                                target="_blank">Mais
+                                informações</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato">
+            <div class="center-texts">
+                <h1>Entre em <span class="bold-color">Contato</span></h1>
+                <p>Envie sua mensagem preenchendo o formulário abaixo:</p>
+            </div>
+            <form id="contact-form">
+                <div class="input-group">
+                    <input class="input-name" type="text" id="name" name="name" placeholder="Seu nome" required>
+                    <input class="input-email" type="email" id="email" name="email" placeholder="Seu e-mail" required>
+                </div>
+                <textarea id="message" name="message" placeholder="Sua mensagem" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <div class="contact-reminder">
+            <a href="" class="contact-item">
+                <div class="icon-container">
+                    <img src="img/svgs/white-ico-telephone.svg" alt="Telefone">
+                </div>
+                <span>+55 (49) 9970-8196</span>
+            </a>
+            <a href="mailto:lipestrapa@gmail.com" class="contact-item">
+                <div class="icon-container">
+                    <img src="img/svgs/white-ico-email.png" alt="E-mail">
+                </div>
+                <span>lipestrapa@gmail.com</span>
+            </a>
+            <a href="https://instagram.com/felipe.strapazzonn" target="_blank" class="contact-item">
+                <div class="icon-container">
+                    <img src="img/svgs/white-ico-instagram.svg" alt="Instagram">
+                </div>
+                <span>@felipe.strapazzonn</span>
+            </a>
+        </div>
+
+        <footer id="footer">
+            <div class="footer-content">
+                <span id="footer-left"></span>
+                <span id="footer-center">© Todos os direitos reservados para Felipe da Silva Strapazzon</span>
+                <span id="footer-right">Felipe da Silva Strapazzon</span>
+            </div>
+        </footer>
+
+
+        <script src="js/navbar.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+        <script>
+            emailjs.init("eB0s3AusnlcvMQfZt"); // Inicialize com sua Public Key
+        </script>
+        <script src="js/traduction.js"></script>
+        <script src="js/email.js"></script>
+        <script src="js/date.js"></script>
+    </div>
+</body>
+
+</html>

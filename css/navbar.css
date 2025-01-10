@@ -1,0 +1,118 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5% 3%;
+    background-color: var(--bg-cor);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+    box-shadow: rgba(50, 50, 93, 0.1) 0px 30px 60px -12px, rgba(0, 0, 0, 0.1) 0px 18px 36px -18px;
+}
+
+nav .ancors,
+nav .languages {
+    align-items: center;
+}
+
+nav .languages {
+    margin-right: 5%;
+}
+
+.lang-item {
+    cursor: pointer;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--texto-cor, #333);
+    margin-left: 25px;
+    letter-spacing: 2.5px;
+    font-size: small;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+}
+
+.menu-item.active,
+.lang-item.active {
+    color: var(--cor-destaque-roxa, #6a1b9a);
+    font-weight: bold;
+}
+
+.navbar-toggler {
+    display: none;
+    cursor: pointer;
+    margin: auto;
+}
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .ancors {
+        height: 0;
+        overflow: hidden;
+        flex-direction: column;
+        display: flex;
+        width: 100%;
+        margin-top: 10px;
+        transition: height 0.5s ease; /* Transição suave */
+    }
+
+    .ancors a {
+        margin: 10px 0;
+    }
+
+    .ancors.show {
+        height: 200px; /* Altura expandida */
+    }
+
+    .languages {
+        justify-content: center;
+        height: 0;
+        overflow: hidden;
+        display: flex;
+        width: 100%;
+        margin-top: 10px;
+        transition: height 0.5s ease; /* Transição suave */
+    }
+    
+    .languages a {
+
+        margin: 5px;
+    }
+
+    .languages.show {
+        height: auto; /* Ajusta a altura para o conteúdo */
+    }
+
+    .navbar-toggler {
+        display: block;
+    }
+}
+
+/* Estilos para telas maiores */
+@media (min-width: 769px) {
+    .ancors,
+    .languages {
+        height: auto;
+        display: flex;
+    }
+
+    .navbar-toggler {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+

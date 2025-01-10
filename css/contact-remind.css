@@ -1,0 +1,113 @@
+.contact-reminder {
+    background-color: #333;
+    color: white;
+    padding: 80px 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 6%;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 2rem; 
+    text-decoration: none;
+    color: var(--cor-texto);
+    transition: transform 0.3s, color 0.3s;
+}
+
+.icon-container {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    transform: rotate(45deg);
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.icon-container:hover {
+    background-color: var(--cor-destaque-roxa-apagada);
+    border-color: var(--cor-destaque-roxa);
+}
+
+.icon-container img {
+    width: 40px;
+    height: 40px;
+    transform: rotate(-45deg);
+}
+
+.contact-item span {
+    font-size: 1rem;
+    line-height: 1.5rem; 
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+    .contact-reminder {
+        padding: 60px 0;
+    }
+
+    .contact-item {
+        gap: 1.5rem; 
+    }
+
+    .icon-container {
+        width: 70px; 
+        height: 70px;
+    }
+
+    .icon-container img {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-reminder {
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 0;
+        gap: 3rem; 
+    }
+
+    .contact-item {
+        flex-direction: column; 
+        align-items: center; 
+        text-align: center; 
+        gap: 1.5rem; 
+    }
+
+    .icon-container {
+        width: 60px; 
+        height: 60px;
+    }
+
+    .icon-container img {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-item {
+        gap: 0.5rem; 
+    }
+
+    .icon-container {
+        width: 50px;
+        height: 50px;
+    }
+
+    .icon-container img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .contact-item span {
+        font-size: 0.9rem; 
+    }
+}

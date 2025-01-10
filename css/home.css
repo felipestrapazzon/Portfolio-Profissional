@@ -1,0 +1,116 @@
+/* Botão */
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: var(--cor-destaque-roxa);
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: var(--cor-destaque-roxa-apagada);
+}
+
+/* Container principal */
+.container-home {
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Alinha verticalmente */
+    margin: 5%;
+    flex-wrap: nowrap; /* Garante elementos lado a lado */
+}
+
+/* Texto à esquerda */
+.left-texts-home {
+    width: 48%;
+    font-size: 18px;
+    margin-top: 0; /* Remove espaço desnecessário */
+    flex: 0 0 auto; /* Previne redimensionamento inadequado */
+}
+
+/* Imagem à direita */
+.right-imgs-home {
+    width: 48%;
+    text-align: center;
+    margin-top: 0; /* Remove espaço desnecessário */
+    flex: 0 0 auto; /* Previne redimensionamento inadequado */
+}
+
+.right-imgs-home img {
+    max-width: 80%;
+    height: auto;
+}
+
+/* Redes sociais */
+.redes-sociais {
+    display: flex;
+    gap: 25px; /* Espaçamento entre os ícones */
+    margin-top: 10%;
+}
+
+.social-icon {
+    position: relative;
+    width: 50px; 
+    height: 50px;
+    display: inline-block;
+}
+
+.social-icon img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.4s ease-in-out;
+}
+
+.solid-icon {
+    opacity: 1;
+    z-index: 1;
+}
+
+.colored-icon {
+    opacity: 0;
+    z-index: 0;
+}
+
+.social-icon:hover .solid-icon {
+    opacity: 0;
+}
+
+.social-icon:hover .colored-icon {
+    opacity: 1;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container-home {
+        flex-direction: column; /* Empilha os elementos */
+        margin: 20px; /* Ajusta espaçamento */
+    }
+
+    .left-texts-home, .right-imgs-home {
+        width: 100%; /* Elementos ocupam toda a largura */
+        text-align: center; /* Centraliza texto e imagem */
+    }
+
+    .right-imgs-home {
+        margin-top: 20px; /* Espaço entre texto e imagem */
+    }
+
+    .redes-sociais {
+        justify-content: center; /* Centraliza as ícones sociais */
+        margin-bottom: 10%;
+    }
+
+    .left-texts-home h1 {
+
+        margin-top: 50px;
+    }
+}
